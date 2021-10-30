@@ -1,6 +1,7 @@
 # 说明
 
 用于刷课的油猴脚本，脚本运行在 `Firefox/93.0` 浏览器
+项目地址： https://github.com/mydaoyuan/course-script
 
 ## 食用方式
 
