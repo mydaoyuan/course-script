@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         autoplayvideo
 // @namespace    tany2021
-// @version      0.1
+// @version      1.0
 // @description  autoplay video
 // @author       tany2021
 // @match        https://cejlu.yuketang.cn/*
@@ -14,6 +14,7 @@
 // @grant GM_setClipboard
 // @grant window.close
 // @grant window.focus
+// @license GPL
 // ==/UserScript==
 //
 
