@@ -25,6 +25,7 @@
     let count = 0
     const concurrent = 6
     const MAX_COUNT = 20
+    const MAX_COURSE_TIME = 1000 * 60 * 60
     const DONE_KEY = 'done'
     const urlWinMap = new Map()
     const promiseTaskMap = new Map()
@@ -164,6 +165,10 @@
     async function startCourse(current) {
       const { value, resolve } = generatePromise()
       targetReslove = resolve
+      // 超时后切换到下一课
+      setTimeout(() => {
+        resolve()
+      }, MAX_COURSE_TIME)
       openCourse(current)
       return value
     }
@@ -268,6 +273,7 @@
             console.log('endplay')
             emitMessage()
           })
+          window.focus()
           setTimeout(() => {
             video[0].muted = true
             video[0].loop = false
